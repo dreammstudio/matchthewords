@@ -10,7 +10,7 @@ function App() {
   return (
    <div>
     {!isStarted && <GameStart functions={{isStarted,setIsStarted,words,setWords}}/>}
-    {isStarted && !win && <Game functions={{words,setIsStarted,setWords,setWin}}/>}
+    {isStarted && !win && <Game functions={{words,setIsStarted,setWords,setWin,setCounter,counter}}/>}
     {win && <WinPage words={words} counter={counter}/>}
    </div>
   )
